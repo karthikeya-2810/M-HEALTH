@@ -25,15 +25,18 @@ class home extends StatelessWidget {
                         SizedBox(width: 25),
                         Text("Review Requests",
                             style: TextStyle(
+                              color: Color(0xFF333333),
                                 fontWeight: FontWeight.bold, fontSize: 18)),
                         SizedBox(width: 120),
-                        Icon(Icons.search),
+                        Icon(Icons.search,
+                        color: Color(0xFF888888),),
                         SizedBox(width: 20),
                         IconButton(
                             onPressed: () {
                               _toggleDrawer(context);
                             },
-                            icon: Icon(Icons.filter_list))
+                            icon: Icon(Icons.filter_list,
+                            color: Color(0xFF888888),))
                       ],
                     ),
                   ],
@@ -80,7 +83,7 @@ class home extends StatelessWidget {
                       decoration: BoxDecoration(
                         border: Border(
                           top: BorderSide(
-                            color: Colors.grey,
+                            color: Color(0xFFDDDDDD),
                             width: 1.0,
                           ),
                         ),
@@ -95,7 +98,7 @@ class home extends StatelessWidget {
                                 Size(90, 20),
                               ),
                               backgroundColor:
-                                  MaterialStateProperty.all<Color>(Colors.blue),
+                                  MaterialStateProperty.all<Color>(Color(0xFF296DF6)),
                               shape: MaterialStateProperty.all<
                                   RoundedRectangleBorder>(
                                 RoundedRectangleBorder(
@@ -119,14 +122,14 @@ class home extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               border: Border.all(
-                                color: Colors.blue,
+                                color: Color(0xFF296DF6),
                               ),
                             ),
                             padding: EdgeInsets.all(10),
                             child: Center(
                                 child: Text(
                               'Discard',
-                              style: TextStyle(color: Colors.blue),
+                              style: TextStyle(color: Color(0xFF296DF6)),
                             )),
                           ),
                         ],

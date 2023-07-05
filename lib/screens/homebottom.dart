@@ -23,13 +23,14 @@ class homebody extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => receipient(request: request)),
+                        MaterialPageRoute(
+                            builder: (context) => receipient(request: request)),
                       );
                     },
                     child: Card(
                       shape: RoundedRectangleBorder(
                         side: BorderSide(
-                            color: Color.fromARGB(92, 105, 101, 101), width: 1),
+                            color: Color(0xFFDDDDDD), width: 1),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Padding(
@@ -55,10 +56,10 @@ class homebody extends StatelessWidget {
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(5),
                                       color: request.imporatnce == 'HIGH'
-                                          ? Colors.red
+                                          ? Color(0xFFFBD5D5)
                                           : request.imporatnce == 'MEDIUM'
-                                              ? Colors.orange
-                                              : Colors.green,
+                                              ? Color(0xFFFFE1BF)
+                                              : Color(0xFFB2E8D4),
                                     ),
                                     child: Text(request.imporatnce),
                                   )
@@ -78,14 +79,14 @@ class homebody extends StatelessWidget {
                                 children: [
                                   Text(
                                     "Tissue",
-                                    style: TextStyle(color: Colors.grey),
+                                    style: TextStyle(color: Color(0xFF888888)),
                                   ),
                                   SizedBox(
                                     width: 135,
                                   ),
                                   Text(
                                     "Eye involved",
-                                    style: TextStyle(color: Colors.grey),
+                                    style: TextStyle(color: Color(0xFF888888)),
                                   ),
                                 ],
                               ),
@@ -114,14 +115,14 @@ class homebody extends StatelessWidget {
                                 children: [
                                   Text(
                                     "Patient Age",
-                                    style: TextStyle(color: Colors.grey),
+                                    style: TextStyle(color: Color(0xFF888888)),
                                   ),
                                   SizedBox(
                                     width: 103,
                                   ),
                                   Text(
                                     "Doctor Name",
-                                    style: TextStyle(color: Colors.grey),
+                                    style: TextStyle(color: Color(0xFF888888)),
                                   ),
                                 ],
                               ),

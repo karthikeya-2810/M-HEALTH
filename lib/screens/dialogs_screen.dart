@@ -33,7 +33,7 @@ void showRejectDialogBox(BuildContext context, Function() onReject) {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       RadioListTile(
-                        title: Text('Cornea not available'),
+                        title: Text('Cornea not available',style: TextStyle(color: Color(0xFF888888)),),
                         value: 0,
                         groupValue: _otherSelected,
                         onChanged: (value) {
@@ -43,7 +43,7 @@ void showRejectDialogBox(BuildContext context, Function() onReject) {
                         },
                       ),
                       RadioListTile(
-                        title: Text('Already addressed'),
+                        title: Text('Already addressed',style: TextStyle(color: Color(0xFF888888))),
                         value: 1,
                         groupValue: _otherSelected,
                         onChanged: (value) {
@@ -54,7 +54,7 @@ void showRejectDialogBox(BuildContext context, Function() onReject) {
                         },
                       ),
                       RadioListTile(
-                        title: Text('No suitable eye found'),
+                        title: Text('No suitable eye found',style: TextStyle(color: Color(0xFF888888))),
                         value: 3,
                         groupValue: _otherSelected,
                         onChanged: (value) {
@@ -65,7 +65,7 @@ void showRejectDialogBox(BuildContext context, Function() onReject) {
                         },
                       ),
                       RadioListTile(
-                        title: Text('Others'),
+                        title: Text('Others',style: TextStyle(color: Color(0xFF888888))),
                         value: 2,
                         groupValue: _otherSelected,
                         onChanged: (value) {

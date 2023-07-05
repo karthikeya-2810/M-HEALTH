@@ -16,9 +16,9 @@ class homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
+    Color color = Color(0xFFFFFFFF).withOpacity(0.75);
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 33, 100, 243),
+       backgroundColor: Color(0xFF296DF6),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -41,7 +41,7 @@ class homepage extends StatelessWidget {
             child: Text(
               'Lab Admin',
               style: TextStyle(
-                  fontSize: 22.0, color: Color.fromARGB(225, 255, 255, 255)),
+                  fontSize: 22.0, color: Colors.white),
             ),
           ),
           SizedBox(height: 25.0),
@@ -49,7 +49,7 @@ class homepage extends StatelessWidget {
             padding: EdgeInsets.only(left: 22.0),
             child: Text(
               '• Made the listening scalable',
-              style: TextStyle(fontSize: 18.0, color: Colors.white60),
+              style: TextStyle(fontSize: 18.0, color:color),
             ),
           ),
           SizedBox(height: 20.0),
@@ -57,7 +57,7 @@ class homepage extends StatelessWidget {
             padding: EdgeInsets.only(left: 22.0),
             child: Text(
               '• Improved the filter',
-              style: TextStyle(fontSize: 18.0, color: Colors.white60),
+              style: TextStyle(fontSize: 18.0, color:color),
             ),
           ),
           SizedBox(height: 20.0),
@@ -65,7 +65,7 @@ class homepage extends StatelessWidget {
             padding: EdgeInsets.only(left: 22.0),
             child: Text(
               '• Introduced new feature',
-              style: TextStyle(fontSize: 16.0, color: Colors.white60),
+              style: TextStyle(fontSize: 16.0, color: color),
             ),
           ),
           SizedBox(height: 10.0),
@@ -73,7 +73,7 @@ class homepage extends StatelessWidget {
             padding: EdgeInsets.only(left: 50.0),
             child: Text(
               '- Search',
-              style: TextStyle(fontSize: 16.0, color: Colors.white60),
+              style: TextStyle(fontSize: 16.0, color:color),
             ),
           ),
           SizedBox(height: 10.0),
@@ -81,7 +81,7 @@ class homepage extends StatelessWidget {
             padding: EdgeInsets.only(left: 50.0),
             child: Text(
               '- Communication',
-              style: TextStyle(fontSize: 16.0, color: Colors.white60),
+              style: TextStyle(fontSize: 16.0, color:color),
             ),
           ),
           SizedBox(height: 20.0),
@@ -89,7 +89,7 @@ class homepage extends StatelessWidget {
             padding: EdgeInsets.only(left: 22.0),
             child: Text(
               '• Improved the visuals',
-              style: TextStyle(fontSize: 16.0, color: Colors.white60),
+              style: TextStyle(fontSize: 16.0, color:color),
             ),
           ),
           SizedBox(height: 20.0),

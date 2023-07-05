@@ -43,7 +43,7 @@ class receipient extends StatelessWidget {
                     Card(
                       shape: RoundedRectangleBorder(
                         side: BorderSide(
-                            color: Color.fromARGB(92, 105, 101, 101), width: 1),
+                            color: Color(0xFFDDDDDD), width: 1),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Padding(
@@ -63,14 +63,14 @@ class receipient extends StatelessWidget {
                                   SizedBox(
                                     width: 160,
                                   ),
-                                  Container(
+                                  Container( 
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(5),
                                       color: request.imporatnce == 'HIGH'
-                                          ? Colors.pink
+                                          ? Color(0xFFFBD5D5)
                                           : request.imporatnce == 'MEDIUM'
-                                              ? Colors.orange
-                                              : Colors.green,
+                                              ? Color(0xFFFFE1BF)
+                                              : Color(0xFFB2E8D4),
                                     ),
                                     child: Text(request.imporatnce),
                                   )
@@ -231,7 +231,7 @@ class receipient extends StatelessWidget {
                     Card(
                       shape: RoundedRectangleBorder(
                         side: BorderSide(
-                            color: Color.fromARGB(92, 105, 101, 101), width: 1),
+                            color: Color(0xFFDDDDDD), width: 1),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Padding(
@@ -307,7 +307,7 @@ class receipient extends StatelessWidget {
                               Card(
                                 shape: RoundedRectangleBorder(
                                   side: BorderSide(
-                                      color: Color.fromARGB(92, 105, 101, 101),
+                                      color: Color(0xFFDDDDDD),
                                       width: 1),
                                   borderRadius: BorderRadius.circular(8),
                                 ),
@@ -345,7 +345,7 @@ class receipient extends StatelessWidget {
                               Card(
                                 shape: RoundedRectangleBorder(
                                   side: BorderSide(
-                                      color: Color.fromARGB(92, 164, 159, 159),
+                                      color: Color(0xFFDDDDDD),
                                       width: 1),
                                   borderRadius: BorderRadius.circular(8),
                                 ),
@@ -393,7 +393,7 @@ class receipient extends StatelessWidget {
                               Size(180, 40),
                             ),
                             backgroundColor:
-                                MaterialStateProperty.all<Color>(Colors.blue),
+                                MaterialStateProperty.all<Color>(Color(0xFF296DF6)),
                             shape: MaterialStateProperty.all<
                                 RoundedRectangleBorder>(
                               RoundedRectangleBorder(
@@ -419,7 +419,7 @@ class receipient extends StatelessWidget {
                           },
                           style: TextButton.styleFrom(
                             fixedSize: Size(180, 40),
-                            backgroundColor: Colors.blue,
+                            backgroundColor: Color(0xFF296DF6),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20.0),
                             ),

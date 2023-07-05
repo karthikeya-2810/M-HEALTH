@@ -31,7 +31,7 @@ class filter_body extends StatelessWidget {
                       height: 40,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: const Color.fromARGB(255, 228, 180, 196)),
+                          color: const Color(0xFFFBD5D5)),
                       padding: EdgeInsets.all(10),
                       child: Center(
                           child: Text(
@@ -47,7 +47,7 @@ class filter_body extends StatelessWidget {
                       height: 40,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: const Color.fromARGB(255, 192, 154, 140),
+                        color: const Color(0xFFFFE1BF),
                       ),
                       padding: EdgeInsets.all(10),
                       child: Center(child: Text('✔️ Medium')),
@@ -61,7 +61,7 @@ class filter_body extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(
-                          color: Colors.black,
+                          color: Color(0xFF888888),
                         ),
                       ),
                       padding: EdgeInsets.all(10),
@@ -88,7 +88,7 @@ class filter_body extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(
-                          color: Colors.black,
+                          color: Color(0xFF888888),
                         ),
                       ),
                       padding: EdgeInsets.all(10),
@@ -103,7 +103,7 @@ class filter_body extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(
-                          color: Colors.black,
+                           color: Color(0xFF888888),
                         ),
                       ),
                       padding: EdgeInsets.all(10),
@@ -120,7 +120,7 @@ class filter_body extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(
-                      color: Colors.black,
+                      color: Color(0xFF888888),
                     ),
                   ),
                   padding: EdgeInsets.all(10),
@@ -145,7 +145,7 @@ class filter_body extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(
-                          color: Colors.black,
+                           color: Color(0xFF888888),
                         ),
                       ),
                       padding: EdgeInsets.all(10),
@@ -160,7 +160,7 @@ class filter_body extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(
-                          color: Colors.black,
+                           color: Color(0xFF888888),
                         ),
                       ),
                       padding: EdgeInsets.all(10),
@@ -175,12 +175,12 @@ class filter_body extends StatelessWidget {
                   children: [
                     Text(
                       "Hospitals",
-                      style: TextStyle(fontSize: 18, color: Colors.grey),
+                      style: TextStyle(fontSize: 18, color: Color(0xFF888888)),
                     ),
                     SizedBox(
                       width: 190,
                     ),
-                    Icon(Icons.keyboard_arrow_up_outlined)
+                    Icon(Icons.keyboard_arrow_up_outlined,color: Color(0xFF888888))
                   ],
                 ),
                 SizedBox(
@@ -196,12 +196,12 @@ class filter_body extends StatelessWidget {
                   children: [
                     Text(
                       "Location",
-                      style: TextStyle(fontSize: 18, color: Colors.grey),
+                      style: TextStyle(fontSize: 18, color: Color(0xFF888888)),
                     ),
                     SizedBox(
                       width: 190,
                     ),
-                    Icon(Icons.keyboard_arrow_up_outlined)
+                    Icon(Icons.keyboard_arrow_up_outlined,color: Color(0xFF888888),)
                   ],
                 ),
                 SizedBox(
@@ -217,12 +217,12 @@ class filter_body extends StatelessWidget {
                   children: [
                     Text(
                       "Doctors",
-                      style: TextStyle(fontSize: 18, color: Colors.grey),
+                      style: TextStyle(fontSize: 18, color: Color(0xFF888888)),
                     ),
                     SizedBox(
                       width: 190,
                     ),
-                    Icon(Icons.keyboard_arrow_up_outlined)
+                    Icon(Icons.keyboard_arrow_up_outlined,color: Color(0xFF888888))
                   ],
                 ),
                 SizedBox(
@@ -253,7 +253,7 @@ class _check_boxState extends State<check_box> {
   @override
   Widget build(BuildContext context) {
     return CheckboxListTile(
-      title: Text(this.widget.name),
+      title: Text(this.widget.name,style: TextStyle(color: Color(0xFF888888)),),
       value: isChecked,
       onChanged: (value) {
         setState(() {

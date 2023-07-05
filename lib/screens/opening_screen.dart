@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 
-
 import 'package:m_health/main.dart';
 
 class lockscreen extends StatelessWidget {
@@ -40,7 +39,7 @@ class lockscreen extends StatelessWidget {
                   padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
-                      color: Color.fromARGB(255, 183, 203, 219)),
+                      color: Color(0xFFECF2FE)),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -49,16 +48,14 @@ class lockscreen extends StatelessWidget {
                         children: [
                           Text(
                             "Name",
-                            style: TextStyle(
-                                color: Color.fromARGB(255, 92, 90, 90)),
+                            style: TextStyle(color: Color(0xFF888888)),
                           ),
                           SizedBox(
                             width: 180,
                           ),
                           Text(
                             "Mobile",
-                            style: TextStyle(
-                                color: Color.fromARGB(255, 92, 90, 90)),
+                            style: TextStyle(color: Color(0xFF888888)),
                           ),
                         ],
                       ),
@@ -87,24 +84,21 @@ class lockscreen extends StatelessWidget {
                         children: [
                           Text(
                             "Death to Preservation Time",
-                            style: TextStyle(
-                                color: Color.fromARGB(255, 92, 90, 90)),
+                            style: TextStyle(color: Color(0xFF888888)),
                           ),
                           SizedBox(
                             width: 50,
                           ),
                           Text(
                             "Age",
-                            style: TextStyle(
-                                color: Color.fromARGB(255, 92, 90, 90)),
+                            style: TextStyle(color: Color(0xFF888888)),
                           ),
                           SizedBox(
                             width: 65,
                           ),
                           Text(
                             "Gender",
-                            style: TextStyle(
-                                color: Color.fromARGB(255, 92, 90, 90)),
+                            style: TextStyle(color: Color(0xFF888888)),
                           ),
                         ],
                       ),
@@ -161,7 +155,7 @@ class lockscreen extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey),
+                      border: Border.all(color: Color(0xFFDDDDDD)),
                       borderRadius: BorderRadius.circular(20)),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -173,9 +167,7 @@ class lockscreen extends StatelessWidget {
                         children: [
                           Text(
                             "Unique Cornea ID",
-                            style: TextStyle(
-                                color:
-                                    const Color.fromARGB(255, 121, 119, 119)),
+                            style: TextStyle(color: Color(0xFF888888)),
                           ),
                           SizedBox(
                             height: 10,
@@ -189,9 +181,7 @@ class lockscreen extends StatelessWidget {
                           ),
                           Text(
                             "Number of Days Preserved",
-                            style: TextStyle(
-                                color:
-                                    const Color.fromARGB(255, 121, 119, 119)),
+                            style: TextStyle(color: Color(0xFF888888)),
                           ),
                           SizedBox(
                             height: 10,
@@ -211,9 +201,7 @@ class lockscreen extends StatelessWidget {
                         children: [
                           Text(
                             "Cornea's Current Temperature",
-                            style: TextStyle(
-                                color:
-                                    const Color.fromARGB(255, 121, 119, 119)),
+                            style: TextStyle(color: Color(0xFF888888)),
                           ),
                           SizedBox(
                             height: 10,
@@ -227,9 +215,7 @@ class lockscreen extends StatelessWidget {
                           ),
                           Text(
                             "Preservation Technique",
-                            style: TextStyle(
-                                color:
-                                    const Color.fromARGB(255, 121, 119, 119)),
+                            style: TextStyle(color: Color(0xFF888888)),
                           ),
                           SizedBox(
                             height: 10,
@@ -243,36 +229,45 @@ class lockscreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 120,),
-                Row(children: [
-                  Icon(Icons.arrow_left_outlined,color: Colors.blue,),
-                  SizedBox(width: 10,),
-                  Text("prev"),
-                  SizedBox(width: 120,),
-                  TextButton(
-  onPressed: () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => homepage()),
-    );
-  },
-
-  style: TextButton.styleFrom(
-    fixedSize: Size(180, 40),
-    backgroundColor: Colors.blue,
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(20.0),
-    ),
-  ),
-  child: Text(
-    'Home',
-    style: TextStyle(
-      color: Colors.white,
-    ),
-  ),
-),
-
-                ],)
+                SizedBox(
+                  height: 120,
+                ),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.arrow_back,
+                      color: Color(0xFF296DF6),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text("prev",style: TextStyle(color: Color(0xFF296DF6)),),
+                    SizedBox(
+                      width: 120,
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => homepage()),
+                        );
+                      },
+                      style: TextButton.styleFrom(
+                        fixedSize: Size(180, 40),
+                        backgroundColor: Color(0xFF296DF6),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                      ),
+                      child: Text(
+                        'Home',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ],
+                )
               ],
             ),
           )),
@@ -299,11 +294,11 @@ class FlowGraph extends StatelessWidget {
 class FlowGraphPainter extends CustomPainter {
   final BuildContext context;
   final circleRadius = 20.0;
-  final circleColor = const Color.fromARGB(255, 114, 223, 117);
+  final circleColor = const Color(0xFFB2E8D4);
   final circleTextColor = Colors.black;
   final circleTextSize = 20.0;
   final lineThickness = 5.0;
-  final lineColor = const Color.fromARGB(255, 114, 223, 117);
+  final lineColor = const Color(0xFFB2E8D4);
 
   FlowGraphPainter(this.context);
 
