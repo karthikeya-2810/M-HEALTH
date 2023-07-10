@@ -42,8 +42,7 @@ class receipient extends StatelessWidget {
                     ),
                     Card(
                       shape: RoundedRectangleBorder(
-                        side: BorderSide(
-                            color: Color(0xFFDDDDDD), width: 1),
+                        side: BorderSide(color: Color(0xFFDDDDDD), width: 1),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Padding(
@@ -63,7 +62,7 @@ class receipient extends StatelessWidget {
                                   SizedBox(
                                     width: 160,
                                   ),
-                                  Container( 
+                                  Container(
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(5),
                                       color: request.imporatnce == 'HIGH'
@@ -230,8 +229,7 @@ class receipient extends StatelessWidget {
                     ),
                     Card(
                       shape: RoundedRectangleBorder(
-                        side: BorderSide(
-                            color: Color(0xFFDDDDDD), width: 1),
+                        side: BorderSide(color: Color(0xFFDDDDDD), width: 1),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Padding(
@@ -307,8 +305,7 @@ class receipient extends StatelessWidget {
                               Card(
                                 shape: RoundedRectangleBorder(
                                   side: BorderSide(
-                                      color: Color(0xFFDDDDDD),
-                                      width: 1),
+                                      color: Color(0xFFDDDDDD), width: 1),
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: Padding(
@@ -327,6 +324,7 @@ class receipient extends StatelessWidget {
                                         Text(
                                           "Recommendation Letter",
                                           style: TextStyle(
+                                              color: Color(0xFF333333),
                                               fontWeight: FontWeight.bold),
                                         ),
                                         SizedBox(
@@ -345,8 +343,7 @@ class receipient extends StatelessWidget {
                               Card(
                                 shape: RoundedRectangleBorder(
                                   side: BorderSide(
-                                      color: Color(0xFFDDDDDD),
-                                      width: 1),
+                                      color: Color(0xFFDDDDDD), width: 1),
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: Padding(
@@ -365,6 +362,7 @@ class receipient extends StatelessWidget {
                                         Text(
                                           "Pre-Surgery Reports",
                                           style: TextStyle(
+                                              color: Color(0xFF333333),
                                               fontWeight: FontWeight.bold),
                                         ),
                                         SizedBox(width: 139),
@@ -392,8 +390,8 @@ class receipient extends StatelessWidget {
                             fixedSize: MaterialStateProperty.all<Size>(
                               Size(180, 40),
                             ),
-                            backgroundColor:
-                                MaterialStateProperty.all<Color>(Color(0xFF296DF6)),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Color(0xFF296DF6)),
                             shape: MaterialStateProperty.all<
                                 RoundedRectangleBorder>(
                               RoundedRectangleBorder(
@@ -413,9 +411,7 @@ class receipient extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {
-                            showRejectDialogBox(context, () {
-                              
-                            });
+                            showRejectDialogBox(context, () {});
                           },
                           style: TextButton.styleFrom(
                             fixedSize: Size(180, 40),
